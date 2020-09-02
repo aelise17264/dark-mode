@@ -8,7 +8,7 @@ export const useLocalStorage = (key, initialValue = '') => {
     // console.log(initialValue)
     return item ? JSON.parse(item) : initialValue;
   });
-console.log(key)
+// console.log(key)
   const setValue = value => {
     setStoredValue(value);
     window.localStorage.setItem(key, JSON.stringify(value));
